@@ -2,6 +2,7 @@ package school.mjc.stage0.loops.task3;
 
 public class FibonacciSeries {
     public void printFibonacci(int lastFibonacci) {
+        int fib = 0;
         int fib1 = 1;
         int fib2 = 1;
         System.out.println(fib1);
