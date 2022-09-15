@@ -5,11 +5,8 @@ public class DigitsSum {
         String str = String.valueOf(t);
         int len = str.length();
         int sum = 0;
-        for (int i = 1; i <= len; i++) {
-            int temp = t / (10);
-            int given = t % (10);
-            sum += temp;
-            temp = given;
+        for (sum = 0; t != 0; t /= 10) {
+            sum = sum + t % 10;
         }
         System.out.println(sum);
     }
